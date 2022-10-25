@@ -30,6 +30,7 @@ code {
 .card__img{
   width: 90%;
   transition: 0.5s;
+  padding: 20px 0;
 }
 .card__img>img{
   width: 70%;
@@ -99,4 +100,45 @@ code {
   border: none;
   border-radius: 5px;
   margin: 0 10px;
+}
+
+
+
+
+.card:hover .card__img {
+	transform: translateY(-90px) rotate(-35deg);
+}
+.card:hover .card__title {
+	transform: translate(-40px, -72px);
+}
+
+.card:hover .card__price {
+	transform: translate(-112px, -72px);
+}
+.card:hover .card__size,
+.card:hover .card__color,
+.card:hover .card__action {
+	transition-delay: 0.2s;
+	opacity: 1;
+	visibility: visible;
+}
+.card__size,
+.card__color,
+.card__action {
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.5s;
+}
+.card__size{
+  margin-top: 80px;
+}
+.card:hover .card__size {
+	margin-top: -50px;
+}
+
+.chi{
+  width: 100px;
+  height: 200px; 
+  object-fit: cover;
+  transform: translate(42px, 18px);
 }
